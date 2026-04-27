@@ -1,0 +1,118 @@
+body {
+    background-color: #d3ccc0; /* sets the background colour to the dark blue of the design for the whole webpage */
+    color: black; /* sets the text colour to white to make it easier to read on the dark background */
+
+}
+
+.header {
+    background: #6f886f; /* sets the background of the header*/
+}
+
+.header img {
+    width: 1%;
+    height: 1%;
+}
+
+.nav_bar {
+    margin: auto; /* automatically sets the margin for either side so its centered and even */
+    display: flex; /* sets display as flex */
+    justify-content: flex-start; /* puts the listed left to right */
+    background-color: #eeeee9; /* sets the background colour of the nav bar to the lighter secondary blue */
+    border-radius: 50px; /* curves the corners of the background */
+    width: 65%; /* sets width */
+}
+
+.nav_bar li {
+    float: left; /* sets it to sit towards the left of the page */
+    padding: 10px; /* adds padding to improve readability */
+    list-style-type: none; /* removes the line under the links */
+
+}
+.nav_bar li a {
+    text-decoration: none; /* removes the default line that is on links to give the website a more modern look */
+    color: black; /* changes the list colour to black so its easier to read on the light background */
+}
+
+
+.footer {
+    position: fixed; /* fixes the position to the bottom of the page, will need to be changed if data on the page is too long */
+    left: 0; /* sets it so that it goes all the way to either side */
+    bottom: 0; /* sets it to the bottom of the page */
+    width: 100%; /* sets width */
+    text-align: center; /* aligns the text to the center of the page */
+    color: black; /* sets text colour to black */
+    background-color: #6f886f; /* sets background colour */
+}
+
+#copyright {
+    background-color: #eeeee9; /* sets background colour */
+    border-radius: 50px; /* rounds the corners of the box to make it look nice */
+    width: 25%; /* sets width */
+    margin: auto; /* automatically sets the margin for either side so its centered and even */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center content horizontally */
+    text-align: center;
+}
+
+.product-item img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* #basketimg {
+    width: 10%;
+    height: 10%;
+} */
+
+.product-single img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#quantityModal {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+    cursor: pointer;
+}
